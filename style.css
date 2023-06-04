@@ -15,8 +15,8 @@ body{
 }
 header{
     width: 100%;
-    background: #ffffff;
     height: 120px;
+    background: #7fffd461;
 }
 .logo-cabecera{
     margin: 40px;
@@ -34,6 +34,7 @@ header{
     text-align: center;
 }
 main{
+    display: flex;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -130,7 +131,7 @@ main{
 }
 footer{
     text-align: center;
-    background: #ffffff;
+    background: #262f9d1f;
     align-items: center;
     text-align: center;
     padding: 30px; /*paddin espaciamiento interno*/
