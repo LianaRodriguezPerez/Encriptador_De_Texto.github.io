@@ -1,0 +1,142 @@
+
+    *{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        overflow-y: hidden;
+        
+    }
+body{
+   
+    background-image: url("imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    background: #ffffff;
+    height: 120px;
+}
+.logo-cabecera{
+    margin: 40px;
+
+}
+.titulo-cabecera{
+    display: inline-block;
+    vertical-align: top;
+    width:70%;
+    margin:20px 10px;
+    padding: 30px;
+    color: #0A3871;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+.sectionone{
+    width: 60%;
+    height: 600px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin:20px;
+}
+.textarea{
+    resize: none;
+    width:60%;
+    height: 350px;
+    justify-content: center;
+    margin:20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #7fffd47a;
+}
+.informacion{
+    margin:10px;
+    font-weight: bold;
+    font-size: 15px;
+    color:rgb(88, 141, 187);
+}
+.botones{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    width:700px;
+    
+}
+#encriptar, #desencriptar{
+    background: #ffc8003b;
+    margin: 5px;
+    width: 340px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    color:#0A3871;
+    border: none; 
+    font-weight: bold;   
+}
+#encriptar:hover{
+    color:#ffffff;
+    
+}
+#desencriptar:hover{
+    color: #ffffff;
+}
+.sectiontwo{
+    width: 30%;
+    height: 600px;
+    padding: 20px;
+    justify-content: center;
+    margin:10px;
+    background: #ffffff; 
+    border-radius: 20px;
+    background: #ffc0cb6e;
+}
+.mensaje{
+    resize: none;
+    width:60%;
+    height: 200px;
+    justify-content: center;
+    margin:20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #ff69b44f;
+    border: none; 
+}
+.muñeco{
+    height: 40%;
+}
+.copiar{
+    background:  #20a3ad78;
+    padding: 10px;
+    width:250px;
+    border-radius: 20px;
+    color:#094549;
+    border: none; 
+    font-weight: bold;
+}
+.copiar:hover{
+    color: pink;
+}
+footer{
+    text-align: center;
+    background: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 30px; /*paddin espaciamiento interno*/
+   }
+.Copyright{ /*UNICODE PARA VER SIMBOLOS*/
+    color: #0A3871;
+    font-size: 13PX;
+    margin: 10PX; /*margin espaciamiento externo*/
+}
