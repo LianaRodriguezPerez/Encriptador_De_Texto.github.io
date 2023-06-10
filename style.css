@@ -2,10 +2,7 @@
     *{
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 32px;
-        line-height: 150%;
-        overflow-y: hidden;
-        
+        line-height: 150%; 
     }
 body{
    
@@ -34,56 +31,57 @@ header{
     text-align: center;
 }
 main{
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
     text-align: center;
-    display: flex;
 }
 .sectionone{
-    width: 60%;
+    display: inline-block;
+    width: 65%;
     height: 600px;
-    padding: 20px;
     justify-content: center;
     text-align: center;
-    margin:20px;
 }
 .textarea{
     resize: none;
-    width:60%;
-    height: 350px;
+    width:90%;
+    height: 400px;
     justify-content: center;
-    margin:20px;
+    margin:0 auto;
     text-align: center;
     font-size: 30px;
     padding: 10px;
     border-radius: 20px;
     background: #7fffd47a;
+    object-fit: cover;
 }
 .informacion{
-    margin:10px;
+    margin:0 auto;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     color:rgb(88, 141, 187);
 }
 .botones{
+    justify-content: center;
     display: flex;
-    margin: auto;
-    padding: 20px;
-    width:700px;
+    margin: 0 auto;
+    padding: 10px;
+    width:85%;
+    height: 20%;
     
 }
+/*BOTONES DE ENVIAR*/
 #encriptar, #desencriptar{
     background: #ffc8003b;
     margin: 5px;
-    width: 340px;
-    padding: 20px;
+    width: 40%;
+    padding: 5px;
     justify-content: center;
     border-radius: 20px;
     color:#0A3871;
     border: none; 
-    font-weight: bold;   
+    font-weight: bold; 
+    font-size: 100%;
 }
+
 #encriptar:hover{
     color:#ffffff;
     
@@ -92,6 +90,7 @@ main{
     color: #ffffff;
 }
 .sectiontwo{
+    display: inline-block;
     width: 30%;
     height: 600px;
     padding: 20px;
@@ -120,14 +119,14 @@ main{
 .copiar{
     background:  #20a3ad78;
     padding: 10px;
-    width:250px;
+    width:200px;
     border-radius: 20px;
     color:#094549;
     border: none; 
     font-weight: bold;
 }
 .copiar:hover{
-    color: pink;
+    color: blanchedalmond;
 }
 footer{
     text-align: center;

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Pragma" content="no-cache">
         <title>Encriptador Challenge ONE</title>
         <link rel="stylesheet" href="reset.css"> 
         <link rel="stylesheet" href="style.css">
@@ -20,20 +21,20 @@
         </header>
         <main>
             <section class="sectionone">
-                <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="textarea" id="validartexto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
                  <div>
-                    <h5 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                    <h5 class="informacion"> &#9432 Solo letras minúsculas y sin acentos</h6>
                 </div>
-                <div class="botones">
-                    <button id="encriptar" type="submit" value="Encriptar"> Encriptar</button>
-                    <button id="desencriptar" type="submit" value="Desencriptar"> Desencriptar</button>
+                <div class="botones" onsubmit="return validarTexto()"  >
+                    <button id="encriptar" onclick="botonencriptar()"  onsubmit="return validarTexto()" type="submit" value="Encriptar">Encriptar</button>
+                    <button id="desencriptar" onclick="botonDesencriptar()" type="submit" value="Desencriptar"> Desencriptar</button>
                 </div>
             </section>
             <section  class="sectiontwo">
                 <textarea class="mensaje" cols="20" rows="10"></textarea>
                     <img class="muñeco" src="imagenes/muñeco.png">
                         <div>
-                            <button class="copiar">Copiar</button>
+                            <button class="copiar" onclick="botonCopiar()">Copiar</button>
                         </div>
             </section>
         </main>
@@ -43,6 +44,6 @@
             <img src="imagenes/Logo.png" alt="logo de la Barberia Alura">
             <p class="Copyright">&copy Copyright Encriptador - 2023</p>
         </footer>
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
