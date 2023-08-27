@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Pragma" content="no-cache">
-        <title>Encriptador Challenge ONE</title>
+        <title>Encriptador de texto</title>
         <link rel="stylesheet" href="reset.css"> 
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="imagenes/Logo.png">
+       
     </head> 
     <body>
         <!--ENCABEZADO-->
@@ -22,19 +24,20 @@
         <main>
             <section class="sectionone">
                 <textarea class="textarea" id="validartexto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-                 <div>
+                 <div class="terminos">
                     <h5 class="informacion"> &#9432 Solo letras minúsculas y sin acentos</h6>
                 </div>
-                <div class="botones" onsubmit="return validarTexto()"  >
-                    <button id="encriptar" onclick="botonencriptar()"  onsubmit="return validarTexto()" type="submit" value="Encriptar">Encriptar</button>
-                    <button id="desencriptar" onclick="botonDesencriptar()" type="submit" value="Desencriptar"> Desencriptar</button>
+                <div class="botones" >
+                    <button class="btn-encriptar" id="botonencriptar" type="button" onclick="encriptar()">Encriptar</button>
+                    <button id="desencriptar" type="submit" class="btn-desencriptar" onclick="desencriptar()"> Desencriptar</button>
                 </div>
             </section>
             <section  class="sectiontwo">
-                <textarea class="mensaje" cols="20" rows="10"></textarea>
-                    <img class="muñeco" src="imagenes/muñeco.png">
-                        <div>
-                            <button class="copiar" onclick="botonCopiar()">Copiar</button>
+                    <img id="muñeco" src="imagenes/muñeco.png" alt="logo">
+                        <div class="mensaje-encriptado" id="mensaje-encriptado">
+                           <h2 id="titulo-mansaje">Ningún mensaje encriptado</h2>
+                           <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                           <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
                         </div>
             </section>
         </main>
@@ -44,6 +47,7 @@
             <img src="imagenes/Logo.png" alt="logo de la Barberia Alura">
             <p class="Copyright">&copy Copyright Encriptador - 2023</p>
         </footer>
-        <script src="script.js"></script>
+       
     </body>
+    <script src="script.js"></script>
 </html>
