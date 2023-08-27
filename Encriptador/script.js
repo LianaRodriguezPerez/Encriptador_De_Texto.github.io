@@ -1,23 +1,32 @@
  function encriptar(){
 
-    let frase = document.getElementById("validartexto").value.toLowerCase();
-    let tituloMensaje = document.getElementById
+    let validartexto = document.getElementById("validartexto").value;
+    let tituloMensaje=document.getElementById("titulo-mensaje");
+    let parrafo=document.getElementById("parrafo");
+    let muñeco = document.getElementById("muñeco")
     // i = para que tome las letras mayusculas y minusculas
     // g = tomae toda la linea 
     // m = tome encuenta multiples lineas
 
-    let textoEncriptado = frase
+    let textoCifrado = validartexto
                                 .replace(/e/img, "enter")
                                 .replace(/o/img, "ober")
                                 .replace(/i/img, "imes")
                                 .replace(/a/img, "ai")
                                 .replace(/u/img, "ufat")
 
-    if(frase.lengt !=0){
-        frase= textoEncriptado;
+    if(validartexto.length !=0){
+        document.getElementById("validartexto").value = textoCifrado; 
+        tituloMensaje.textContent = "Texto encriptado con exito";
+        parrafo.textContent ="";
+        muñeco.src = "./imagenes/encriptado.jpg";
+    } else{
+        muñeco.src ="./imagenes/muñeco.png";
+        tituloMensaje.textContent = "Ningún mensaje fue encontrado"
+        parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar"
+        alert("Debes ingresar algún texto");
     }
 
-    document.getElementById("mensaje").innerHTML = textoEncriptado;
 }
  
  
