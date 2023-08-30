@@ -62,7 +62,7 @@ header{
     position: absolute;
     left:12%;
     top:80%;
-    font-size: 14px;
+    font-size: 2vh;
     color:rgb(88, 141, 187);
     opacity: 0.8;
     flex: none;
