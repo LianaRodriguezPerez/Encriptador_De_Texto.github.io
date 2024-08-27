@@ -16,11 +16,11 @@
                                 .replace(/u/img, "ufat")
 
     if(validartexto.length !=0){
-        document.getElementById("validartexto").value = textoCifrado; 
-        tituloMensaje.textContent = "Texto encriptado con exito";
+        document.getElementById("validartexto").value = textoCifrado;
+        tituloMensaje.textContent = textoCifrado;
         parrafo.textContent ="";
-        muñeco.src = "./imagenes/encriptado.jpg";
-    } else{
+        muñeco.parentNode.removeChild(muñeco);
+        } else{
         muñeco.src ="./imagenes/muñeco.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado"
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar"
